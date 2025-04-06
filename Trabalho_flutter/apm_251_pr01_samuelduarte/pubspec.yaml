@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.6
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +24,16 @@ flutter:
     - assets/pedra.png
     - assets/papel.png
     - assets/tesoura.png
+    - assets/jokenpo.png
+
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/jokenpo.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/jokenpo.png
+  android: true
+  ios: false
