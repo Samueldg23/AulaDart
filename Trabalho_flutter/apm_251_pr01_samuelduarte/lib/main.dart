@@ -1,4 +1,4 @@
-import 'package:apm_251_pr01_samuelduarte/pages/home_page';
+import 'package:apm_251_pr01_samuelduarte/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
