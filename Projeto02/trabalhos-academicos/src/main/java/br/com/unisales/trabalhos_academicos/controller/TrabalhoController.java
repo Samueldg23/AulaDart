@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.unisales.trabalhos_academicos.Service.TrabalhoService;
 import br.com.unisales.trabalhos_academicos.model.TrabalhoAcademico;
+import br.com.unisales.trabalhos_academicos.service.TrabalhoService;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
@@ -37,10 +37,18 @@ public class TrabalhoController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    /*
+     * @PostMapping
+     * public ResponseEntity<TrabalhoAcademico> criar(@RequestBody TrabalhoAcademico
+     * trabalho) {
+     * TrabalhoAcademico salvo = service.salvar(trabalho);
+     * return ResponseEntity.ok(salvo);
+     * }
+     */
+
     @PostMapping
     public ResponseEntity<TrabalhoAcademico> criar(@RequestBody TrabalhoAcademico trabalho) {
-        TrabalhoAcademico salvo = service.salvar(trabalho);
-        return ResponseEntity.ok(salvo);
+        return ResponseEntity.ok(service.salvar(trabalho));
     }
 
     @PutMapping("/{id}")

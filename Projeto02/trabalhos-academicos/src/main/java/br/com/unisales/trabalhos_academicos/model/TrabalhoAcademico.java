@@ -18,6 +18,7 @@ public class TrabalhoAcademico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     private String titulo;
     private String descricao;
     private LocalDate dataEntrega;

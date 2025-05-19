@@ -1,4 +1,4 @@
-package br.com.unisales.trabalhos_academicos.Service;
+package br.com.unisales.trabalhos_academicos.service;
 
 import java.util.List;
 import java.util.Optional;
